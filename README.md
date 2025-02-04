@@ -4,9 +4,9 @@ Export to excel file with .NET like never before
 
 # Usage
 
-Create `class` to represent the data like below
+Create `class` to represent the data and use `ExcelColumn` to represent excel coloumn
 
-```
+```C#
 public class Person
 {
     [ExcelColumn(Index = 1)]
@@ -25,7 +25,7 @@ public class Person
 
 Use the `ExcelGenerator` to export person data to excel
 
-```
+```C#
 var rows = new Person[]
 {
     new Person("Faisal","Ahmed")
