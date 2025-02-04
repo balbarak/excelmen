@@ -4,7 +4,7 @@ Export to excel file with .NET like never before
 
 # Usage
 
-Use class to represent data like below and attribute above the property that persent columns
+Create `class` to represent the data like below
 
 ```
 public class Person
@@ -23,7 +23,7 @@ public class Person
 }
 ```
 
-Use the generator
+Use the `ExcelGenerator` to export person data to excel
 
 ```
 var rows = new Person[]
