@@ -8,7 +8,7 @@ csproj Reference
 
 `<PackageReference Include="Excelmen" Version="1.0.0" />`
 
-donet CLI
+dotnet CLI
 
 `dotnet add package Excelmen --version 1.0.0`
 
