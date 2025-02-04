@@ -2,6 +2,7 @@
 using Excelmen.Models;
 using OfficeOpenXml;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.RefAndLookup;
+using OfficeOpenXml.Table;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,13 +39,22 @@ namespace Excelmen
             return this;
         }
 
-        public byte[] Generate()
+        public byte[] Generate(ExcelGenerateOptions options = null)
         {
+            if (options == null)
+                options = new ExcelGenerateOptions();
+
             byte[] result;
 
             SetColumns();
 
             InsertRows();
+
+            if (options.FormatAsTable)
+                FormatAsTable();
+
+            if (options.AutoFit)
+                AutoFitAll();
 
             using (MemoryStream ms = new MemoryStream())
             {
@@ -52,6 +62,7 @@ namespace Excelmen
 
                 result = ms.ToArray();
             }
+
 
             return result;
         }
@@ -155,5 +166,22 @@ namespace Excelmen
             return result;
         }
 
+        public virtual void FormatAsTable()
+        {
+            int endColumn = _sheet.Dimension.End.Column;
+            int endRow = _sheet.Dimension.End.Row;
+
+            var range = _sheet.Cells[1, 1, endRow, endColumn];
+            var table = _sheet.Tables.Add(range, "table1");
+
+            table.TableStyle = TableStyles.Medium9;
+            range.AutoFitColumns();
+        }
+
+        public void AutoFitAll()
+        {
+            var range = _sheet.Cells[1, 1, _sheet.Dimension.End.Row, _sheet.Dimension.End.Column];
+            range.AutoFitColumns();
+        }
     }
 }

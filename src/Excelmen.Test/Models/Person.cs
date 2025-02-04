@@ -23,7 +23,7 @@ namespace Excelmen.Test.Models
         [ExcelColumn(
             Index = 3,
             Format ="dd-MMM-yyyy hh:mm:ss",
-            AutoFitColoumns = false,
+            AutoFitColoumns = true,
             HorizontalAlignment = ExcelHorizontalAlignment.Center)]
         [Display(Name = "Date of Birth")]
         public DateTime DateOfBirth { get; set; }

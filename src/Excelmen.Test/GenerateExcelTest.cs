@@ -1,3 +1,4 @@
+using Excelmen.Models;
 using Excelmen.Test.Models;
 
 namespace Excelmen.Test
@@ -7,6 +8,7 @@ namespace Excelmen.Test
         [Fact]
         public void Should_Create_Excel_File()
         {
+
             var data = new Person[]
             {
                 new Person()
@@ -36,7 +38,10 @@ namespace Excelmen.Test
 
             generator.AddRows(data);
 
-            var result = generator.Generate();
+            var result = generator.Generate(new ExcelGenerateOptions()
+            {
+                AutoFit= true,
+            });
 
             File.WriteAllBytes(@"C:\Users\balba\Desktop\excels\persons.xlsx", result);
         }

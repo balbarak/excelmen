@@ -6,6 +6,8 @@ namespace Excelmen.Models
 {
     public class ExcelGenerateOptions
     {
-        public bool AutoFitColumns { get; set; }
+        public bool AutoFit { get; set; }
+
+        public bool FormatAsTable { get; set; }
     }
 }
