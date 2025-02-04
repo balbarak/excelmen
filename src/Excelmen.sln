@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelmen", "Excelmen\Excelm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelmen.Test", "Excelmen.Test\Excelmen.Test.csproj", "{392F064A-6A10-4356-9F14-B43E9DCA8816}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelmen.SampleApp", "Excelmen.SampleApp\Excelmen.SampleApp.csproj", "{D5B19D47-87A4-430E-BE8C-2D839F837F94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B19D47-87A4-430E-BE8C-2D839F837F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B19D47-87A4-430E-BE8C-2D839F837F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B19D47-87A4-430E-BE8C-2D839F837F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B19D47-87A4-430E-BE8C-2D839F837F94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
