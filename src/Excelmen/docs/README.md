@@ -1,18 +1,6 @@
-# Excelmen
+﻿# Excelmen
 Export to excel file with .NET like never before
 
-
-# Installation
-
-https://www.nuget.org/packages/Excelmen/
-
-csproj Reference
-
-`<PackageReference Include="Excelmen" Version="1.0.0" />`
-
-donet CLI
-
-`dotnet add package Excelmen --version 1.0.0`
 
 # Usage
 

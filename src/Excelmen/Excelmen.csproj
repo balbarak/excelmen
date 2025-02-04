@@ -1,12 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>disable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>disable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+
+
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/docs/release-notes.txt"))</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/balbarak/excelmen</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/balbarak/excelmen.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>Excelmen</PackageId>
+		<Version>1.0.0</Version>
+		<PackageTags>Excel;Export;Export To Excel</PackageTags>
+		<Authors>balbarak</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>
+			This library allows you to export data to excel in simple way
+		</Description>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="EPPlus" Version="4.5.3.1" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+
+
+		<None Include="docs\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
