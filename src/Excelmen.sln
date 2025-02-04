@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelmen", "Excelmen\Excelmen.csproj", "{3FEDF73F-AD16-450D-A941-2C37DADFAB26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelmen.Test", "Excelmen.Test\Excelmen.Test.csproj", "{392F064A-6A10-4356-9F14-B43E9DCA8816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FEDF73F-AD16-450D-A941-2C37DADFAB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEDF73F-AD16-450D-A941-2C37DADFAB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEDF73F-AD16-450D-A941-2C37DADFAB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEDF73F-AD16-450D-A941-2C37DADFAB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392F064A-6A10-4356-9F14-B43E9DCA8816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
